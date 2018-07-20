@@ -1,6 +1,8 @@
 package com.ssm.model;
 
-public class User {
+import com.ssm.util.BaseData;
+
+public class User extends BaseData{
 
     //主键
     private int id;

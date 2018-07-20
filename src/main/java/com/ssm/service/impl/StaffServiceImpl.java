@@ -28,4 +28,12 @@ public class StaffServiceImpl implements StaffService{
 		return staffMapper.listAll();
 	}
 
+	@Override
+	public Staff getByLoginNamePassword(String loginName, String password) {
+		if (loginName == "" || password == "") {
+			return null;
+		}
+		return staffMapper.getByLoginNamePassword(loginName, password);
+	}
+
 }

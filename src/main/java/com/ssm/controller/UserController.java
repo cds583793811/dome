@@ -28,7 +28,7 @@ public class UserController {
 	/**
 	 * 登录
 	 */
-	@RequestMapping("login")
+	@RequestMapping("/login")
 	public Result<Staff> login(Staff staff) {
 		Staff data = staffService.getByLoginNamePassword(staff);
 		return Result.success(data);

@@ -16,7 +16,7 @@
         ">
 
         <!-- 注解扫描包 -->
-        <context:component-scan base-package="com.summer" />
+       <!--  <context:component-scan base-package="com.summer" /> -->
         <!-- 加载jdbc.properties文件  -->
 
         <context:property-placeholder location="classpath:jdbc.properties"/>

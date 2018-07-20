@@ -6,8 +6,8 @@
     id ：必须与对应接口的某个对应的方法名一致即必须要和UserMapper.java接口中的方法同名。  
  -->  
  <mapper namespace="com.ssm.mapper.StaffMapper">
- <select id="getByLoginNamePassword" resultType="Staff">
- 	select loginName loginName, password password from staff where loginName=#{loginName} and password=#{password}
+ <select id="getByLoginNamePassword" resultType="com.ssm.model.Staff">
+ 	select loginName , password from staff where loginName=#{loginName} and password=#{password}
  </select>
  <select id="listAll" resultType="Staff">
  	select * from staff
